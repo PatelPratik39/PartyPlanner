@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Party Planner</title>
+    <link rel="stylesheet" href="PartyPlanner.css">
+    <script defer src="PartyPlanner.js"></script>
+</head>
+<body> 
+    <h1 id="header">  🎉🎉🎉 Party Planner 🎉🎉🎉</h1>
+            <form id="addEvent">
+                <label for="name"> 🆔  Name : </label><br>
+                <input placeholder="Enter your Event Name" type="text" id="name" name="textContent"><br><br>
+                <label for="date"> 📅 Date : </label><br>
+                <input type="datetime-local" id="date" name="textContent"><br><br>
+                <label for="location"> 📍 Location: </label><br>
+                <input placeholder='Enter your Location' type="text" id="location" name="textContent"><br><br>
+                <label for="description"> 🗒️ Description : </label><br>
+                <input placeholder="Enetr your Event Description" type="text" id="description" name="textContent"><br><br>
+                <button id="button" type="submit"> Add Events ✅ </button><br><br>
+            </form>
+    <main>
+        <table id="eventsTable" >
+            <tr id="tableData">
+                <th >Name</th>
+                <th >Date</th>
+                <th >Time</th>
+                <th>Location</th>
+                <th>Description</th>
+            </tr>
+    </main>    
+</body>
+</html>

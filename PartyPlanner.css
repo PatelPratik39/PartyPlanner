@@ -1,0 +1,52 @@
+body{
+    text-align: center;
+    padding: auto;
+    width: 100%;
+    box-shadow: 0 4px 6px rgb(0, 0.1, 0.1);
+}
+th, td {
+    border: 1px solid black;
+    color: white;
+    font-size: larger;
+    box-shadow: 0 4px 6px rgb(128, 124, 124);
+}
+#button{
+    color: blue;
+    font-size: large;
+    background-color: rgb(20, 224, 238);
+    box-shadow: 0 4px 6px rgb(0, 0.1, 0.1);
+    padding: 10px;
+    font-weight: bold;
+}
+
+#eventsTable{
+    align-items: center;
+    margin: auto;
+    padding: 10px;
+    color: black;
+    background-color: #29bb89;
+    box-shadow: 2px 4px 6px rgb(0, 0.1, 0.1);
+    width: 100%;
+}   
+#addEvent{
+    box-shadow: 0 4px 6px rgb(0, 0.1, 0.1);
+    font-size: larger;
+    font-weight: bolder;
+    padding: auto;
+    background-color: rgb(234, 226, 226);
+}
+#tableData{
+    color: white;
+    box-shadow: 0 4px 6px rgb(239, 3, 3);
+}
+#header{
+    align-items: center;
+    padding : 20px; 
+    color: blue;
+    box-shadow: 10px 10px 20px rgb(239, 3, 3);
+}
+input{
+    padding: 10px;
+    width: 600px;
+    box-shadow: 0 4px 6px rgb(0, 0.1, 0.0);
+}
