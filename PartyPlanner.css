@@ -21,13 +21,24 @@ th, td {
 
 #eventsTable{
     align-items: center;
-    margin: auto;
+    margin: 1px;
     padding: 10px;
     color: black;
     background-color: #29bb89;
     box-shadow: 2px 4px 6px rgb(0, 0.1, 0.1);
     width: 100%;
-}   
+}  
+
+#eventsList{
+    align-items: center;
+    margin: 1px;
+    padding: 10px;
+    color: black;
+    background-color: #29bb89;
+    box-shadow: 2px 4px 6px rgb(0, 0.1, 0.1);
+    width: 100%;
+} 
+
 #addEvent{
     box-shadow: 0 4px 6px rgb(0, 0.1, 0.1);
     font-size: larger;

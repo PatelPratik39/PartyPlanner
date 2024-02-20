@@ -24,8 +24,10 @@ function renderEvents() {
   const eventElements = state.events.map((events) => {
     const eventsRow = document.createElement("tr");
     eventsRow.classList.add("events");
-    // const tableHeader = document.createElement("th");
-    // tableHeader.innerText = events;
+
+    const tableHeader = document.createElement("th");
+    tableHeader.innerText = 'events';
+
     const nameCell = document.createElement("td");
     nameCell.innerText = events.name;
     const descriptionCell = document.createElement("td");
@@ -40,7 +42,8 @@ function renderEvents() {
     eventsRow.appendChild(dateCell);
     eventsRow.appendChild(descriptionCell);
     eventsRow.appendChild(locationCell);
-    // eventElements.appendChild(eventsRow);
+    // eventElements.appendChild(tableHeader);
+    eventsList.appendChild(tableHeader);
 
     const deleteButton = document.createElement("button");
     deleteButton.textContent = "Delete Event";
@@ -65,7 +68,6 @@ render();
 addEventsForm.addEventListener("submit", addEvent);
 
 button.addEventListener("click", function () {
-  // event.preventDefault();
   console.log("Button clicked");
 });
 
@@ -79,6 +81,11 @@ async function addEvent(event) {
     addEventsForm.location.value,
     addEventsForm.description.value
   );
+  // When the use submit the form, we want to to create an event to render and manually clear the form below.
+  addEventsForm.date.value = new Date();
+  addEventsForm.name.value = "";
+  addEventsForm.location.value = "";
+  addEventsForm.description.value = "";
 }
 
 async function createEvent(name, date, location, description) {
